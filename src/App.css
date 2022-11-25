@@ -1,0 +1,119 @@
+@font-face { font-family: "BogleWeb-Black"; src: url("./fonts/BogleWeb-Black.woff2") format("woff2"), url("./fonts/BogleWeb-Black.woff") format("woff"); font-weight: normal; font-style: normal; } 
+
+@font-face { font-family: "BogleWeb-BlackItalic";src: url("./fonts/BogleWeb-BlackItalic.woff2") format("woff2"), url("./fonts/BogleWeb-BlackItalic.woff") format("woff"); font-weight: normal; font-style: normal; } 
+
+@font-face { font-family: "BogleWeb-Bold"; src: url("./fonts/BogleWeb-Bold.woff2") format("woff2"), url("./fonts/BogleWeb-Bold.woff") format("woff"); font-weight: normal; font-style: normal; } 
+
+@font-face { font-family: "BogleWeb-BoldItalic"; src: url("./fonts/BogleWeb-BoldItalic.woff2") format("woff2"), url("./fonts/BogleWeb-BoldItalic.woff") format("woff"); font-weight: normal; font-style: normal; } 
+
+@font-face { 
+  font-family: "BogleWeb-Regular"; 
+  src:  url("./fonts/BogleWeb-Regular.woff2") format("woff2"), url("./fonts/BogleWeb-Regular.woff") format("woff"); 
+  font-weight: normal; font-style: normal; 
+}
+
+@font-face { font-family: "BogleWeb-RegularItalic"; src: url("./fonts/BogleWeb-RegularItalic.woff2") format("woff2"), url("./fonts/BogleWeb-RegularItalic.woff") format("woff"); font-weight: normal; font-style: normal; } 
+
+
+*,
+::after,
+::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family:BogleWeb,Helvetica Neue,Helvetica,Arial,sans-serif; */
+}
+
+body{
+  font-family: "BogleWeb-Regular",sans-serif;
+  padding-bottom: 2em;
+}
+
+body h1 .hbold{
+  font-family: "BogleWeb-Bold",sans-serif;
+}
+
+.App > div:not(.nav){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App > div:not(.nav) > div{
+  width: 100%;
+  max-width: 1360px;
+  text-align: center;
+  /* margin-top: 3em; */
+  
+}
+
+.product a{
+  text-decoration: none;
+  color:black;
+}
+
+.results{
+  display: flex;
+  flex-direction: row;
+  gap:4em;
+  flex-wrap: wrap;
+}
+
+.results .product,.categoryProducts .product {
+  width: 20vw;
+}
+
+.signoutBtn{
+  padding:0.4em 1em;
+  border: none;
+  border-radius: 4px;
+  color:white !important;
+  background-color: rgb(241, 28, 0);
+}
+
+.signoutBtn:hover{
+  background-color: rgb(223, 0, 0);
+  cursor: pointer;
+}
+
+/* Media Queries for products */
+@media screen and (max-width:900px){
+
+  .categoryProducts{
+      padding:0.8em;
+  }
+
+  .productsCont .product{
+      width: 30vw;
+      padding:0.2em;
+  }
+}
+
+@media screen and (max-width:500px){
+
+  .productsCont .product{
+      width: 60vw;
+      padding:0.2em;
+  }
+}
+
+
+/*JJ Common*/
+.display-flex{
+  display: flex;
+}
+/*  global classes */
+
+.mouse-pointer{
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* JJ Common End */

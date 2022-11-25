@@ -1,0 +1,31 @@
+#accountPage{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding-bottom: 65px;
+}
+
+.loading{
+    padding: 3em;
+}
+
+.profile h3{
+    margin-top:2em;
+    margin-bottom: 1em;
+}
+
+.profile .details{
+    width: 40%;
+}
+
+.switchBtn{
+    background-color: rgb(176, 0, 199) !important;
+}
+
+#log_Res_Detail{
+    width: max-content;
+    background: white;
+}
